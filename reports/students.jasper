@@ -1,0 +1,44 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="students" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="12345678-aaaa-bbbb-cccc-ddddeeeeffff">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MYSQL"/>
+	<query language="SQL"><![CDATA[SELECT * FROM students]]></query>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="grade" class="java.lang.Integer"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="age" class="java.lang.Integer"/>
+	<title height="40">
+		<element kind="staticText" uuid="a76cdf99-0284-4013-bd66-0c5ed6edd478" x="150" y="10" width="300" height="30" fontSize="18.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[STUDENT DETAILS REPORT]]></text>
+		</element>
+	</title>
+	<columnHeader height="30">
+		<element kind="staticText" uuid="4de8f78b-56a9-4f67-9d15-bc044f94eef4" x="30" y="0" width="100" height="30">
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="b3c08afb-6da7-44ef-ba3a-1d1fdb144014" x="130" y="0" width="100" height="30">
+			<text><![CDATA[Grade]]></text>
+		</element>
+		<element kind="staticText" uuid="b21216d3-5416-42e4-9879-bed26f2859bc" x="230" y="0" width="200" height="30">
+			<text><![CDATA[Name]]></text>
+		</element>
+		<element kind="staticText" uuid="5b960079-41a8-432a-b8b0-fa8ee764d58d" x="430" y="0" width="100" height="30">
+			<text><![CDATA[Age]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30">
+			<element kind="textField" uuid="46b2f9ef-62db-445d-afb4-813421b3e834" x="30" y="0" width="100" height="30">
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="0033a504-1b0c-490f-9dba-0936324d943b" x="130" y="0" width="100" height="30">
+				<expression><![CDATA[$F{grade}]]></expression>
+			</element>
+			<element kind="textField" uuid="7beeacba-88b8-44e2-a43e-21aa83520e14" x="230" y="0" width="200" height="30">
+				<expression><![CDATA[$F{name}]]></expression>
+			</element>
+			<element kind="textField" uuid="4b284e4d-7ed3-46bf-8fc7-380ef64084d0" x="430" y="0" width="100" height="30">
+				<expression><![CDATA[$F{age}]]></expression>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
